@@ -9,7 +9,7 @@ import UIKit
 import UserNotifications
 
 
-class ViewController: UIViewController, UITextFieldDelegate {
+class ViewController: UIViewController {
     var ud: UserDefaults?
     var user: String? = ""
     var amountWater: Double? = 0.0
@@ -34,8 +34,6 @@ class ViewController: UIViewController, UITextFieldDelegate {
     override func viewDidAppear(_ animated: Bool) {
         setImage()
         setTextLabel()
-        amountWater = UserDefaults.standard.double(forKey: "amountWater")
-        waterTextFiled.delegate = self
     }
     
 
