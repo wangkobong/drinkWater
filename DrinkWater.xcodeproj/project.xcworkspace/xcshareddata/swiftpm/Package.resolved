@@ -1,0 +1,25 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "TextFieldEffects",
+        "repositoryURL": "https://github.com/raulriera/TextFieldEffects.git",
+        "state": {
+          "branch": "master",
+          "revision": "6bcda6335403c228b02b04ed8ba5225460762edb",
+          "version": null
+        }
+      },
+      {
+        "package": "TweeTextField",
+        "repositoryURL": "https://github.com/oleghnidets/TweeTextField.git",
+        "state": {
+          "branch": null,
+          "revision": "b712e44c1fe4020ee20f9d494572a9762ea5a59c",
+          "version": "1.6.3"
+        }
+      }
+    ]
+  },
+  "version": 1
+}

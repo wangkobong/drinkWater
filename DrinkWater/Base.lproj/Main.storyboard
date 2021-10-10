@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="86b-lq-7Vb">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--물 마시기-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="DrinkWater" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="7gF-hQ-N75">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <color key="backgroundColor" red="0.25490197539999998" green="0.58039218189999997" blue="0.44705885649999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="tm3-5o-OR1">
+                                <rect key="frame" x="0.0" y="88" width="414" height="788"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="4zH-Rl-ybJ">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="215"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="SXZ-Lf-DEp">
+                                                <rect key="frame" x="0.0" y="0.0" width="207" height="215"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FKo-3u-bUf">
+                                                        <rect key="frame" x="0.0" y="0.0" width="207" height="107.5"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="geh-e2-gJD">
+                                                        <rect key="frame" x="0.0" y="107.5" width="207" height="107.5"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cet-yM-bAJ">
+                                                <rect key="frame" x="207" y="0.0" width="207" height="215"/>
+                                            </view>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Q6s-tx-Ibp">
+                                        <rect key="frame" x="0.0" y="215" width="414" height="299.5"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="249" image="1-1" translatesAutoresizingMaskIntoConstraints="NO" id="XIc-jO-GSl">
+                                                <rect key="frame" x="0.0" y="0.0" width="414" height="251.5"/>
+                                            </imageView>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="몇 ml의 물을 마셨나요?" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xWL-qZ-Mxu" customClass="TweeActiveTextField" customModule="TweeTextField">
+                                                <rect key="frame" x="0.0" y="259.5" width="414" height="40"/>
+                                                <color key="backgroundColor" red="0.2588235438" green="0.58039218189999997" blue="0.44705885649999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="40" id="PC7-Jh-2iP"/>
+                                                </constraints>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="activeLineColor">
+                                                        <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="activeLineWidth">
+                                                        <real key="value" value="3"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="animationDuration">
+                                                        <real key="value" value="0.29999999999999999"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="placeholderColor">
+                                                        <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="placeholderDuration">
+                                                        <real key="value" value="1"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </textField>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="P7r-35-WsH">
+                                        <rect key="frame" x="0.0" y="514.5" width="414" height="273.5"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gLy-lx-c9J">
+                                                <rect key="frame" x="0.0" y="0.0" width="414" height="245"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z8i-Qy-Rhq">
+                                                        <rect key="frame" x="160.5" y="27" width="93.5" height="35"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="44" id="fOA-fl-zfv"/>
+                                                            <constraint firstAttribute="height" constant="35" id="uh6-54-lWh"/>
+                                                        </constraints>
+                                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain" title="마셨어요">
+                                                            <fontDescription key="titleFontDescription" type="system" pointSize="20"/>
+                                                        </buttonConfiguration>
+                                                        <connections>
+                                                            <action selector="drinkButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="QCF-c7-3mc"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstItem="Z8i-Qy-Rhq" firstAttribute="top" secondItem="gLy-lx-c9J" secondAttribute="top" constant="27" id="JWU-ov-7EU"/>
+                                                    <constraint firstItem="Z8i-Qy-Rhq" firstAttribute="centerX" secondItem="gLy-lx-c9J" secondAttribute="centerX" id="q1N-mg-cVI"/>
+                                                </constraints>
+                                            </view>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="안녕하세요님의 하루 물 권장 섭취량은 2.1L입니다." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ugd-B6-nsO">
+                                                <rect key="frame" x="0.0" y="253" width="414" height="20.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="4zH-Rl-ybJ" firstAttribute="top" secondItem="tm3-5o-OR1" secondAttribute="top" id="3Fh-kn-jdq"/>
+                                    <constraint firstItem="Q6s-tx-Ibp" firstAttribute="top" secondItem="tm3-5o-OR1" secondAttribute="top" constant="215" id="95V-MP-m4E"/>
+                                    <constraint firstAttribute="trailing" secondItem="4zH-Rl-ybJ" secondAttribute="trailing" id="EBl-mv-y5K"/>
+                                    <constraint firstItem="Q6s-tx-Ibp" firstAttribute="top" secondItem="4zH-Rl-ybJ" secondAttribute="bottom" id="HzO-mD-jZ9"/>
+                                    <constraint firstItem="P7r-35-WsH" firstAttribute="top" secondItem="Q6s-tx-Ibp" secondAttribute="bottom" id="U7k-v1-O6H"/>
+                                    <constraint firstItem="P7r-35-WsH" firstAttribute="top" secondItem="Q6s-tx-Ibp" secondAttribute="bottom" id="Wd5-vP-q8E"/>
+                                    <constraint firstItem="4zH-Rl-ybJ" firstAttribute="top" secondItem="tm3-5o-OR1" secondAttribute="top" id="Wje-5s-qTn"/>
+                                    <constraint firstItem="Q6s-tx-Ibp" firstAttribute="top" secondItem="4zH-Rl-ybJ" secondAttribute="bottom" id="Y0p-4D-gCY"/>
+                                    <constraint firstAttribute="bottom" secondItem="P7r-35-WsH" secondAttribute="bottom" id="YT8-MJ-oTJ"/>
+                                    <constraint firstAttribute="trailing" secondItem="P7r-35-WsH" secondAttribute="trailing" id="nOA-ts-55g"/>
+                                    <constraint firstItem="P7r-35-WsH" firstAttribute="top" secondItem="tm3-5o-OR1" secondAttribute="top" constant="514.5" id="t3B-eh-5EO"/>
+                                    <constraint firstItem="Q6s-tx-Ibp" firstAttribute="top" secondItem="4zH-Rl-ybJ" secondAttribute="bottom" id="uqv-Pa-fYU"/>
+                                    <constraint firstItem="4zH-Rl-ybJ" firstAttribute="leading" secondItem="tm3-5o-OR1" secondAttribute="leading" id="zHD-4q-c7F"/>
+                                    <constraint firstItem="P7r-35-WsH" firstAttribute="leading" secondItem="tm3-5o-OR1" secondAttribute="leading" id="zlN-qk-H8O"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="tm3-5o-OR1" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="E1g-w5-kEC"/>
+                            <constraint firstItem="tm3-5o-OR1" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="bCQ-VD-cH3"/>
+                            <constraint firstAttribute="trailing" secondItem="tm3-5o-OR1" secondAttribute="trailing" id="eFX-Ct-M4F"/>
+                            <constraint firstItem="7gF-hQ-N75" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailing" id="oE9-Cr-R8L"/>
+                            <constraint firstAttribute="bottom" secondItem="7gF-hQ-N75" secondAttribute="bottom" id="oV0-GO-KeJ"/>
+                            <constraint firstItem="7gF-hQ-N75" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="qOQ-c8-iln"/>
+                            <constraint firstItem="7gF-hQ-N75" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="rTB-MJ-azV"/>
+                            <constraint firstAttribute="bottom" secondItem="tm3-5o-OR1" secondAttribute="bottom" constant="20" id="xPz-g2-GJ4"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="물 마시기" id="rPk-pU-hoq">
+                        <barButtonItem key="leftBarButtonItem" image="arrow.left.arrow.right.circle.fill" catalog="system" id="8hm-85-aUE">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <action selector="initButtonPressed:" destination="BYZ-38-t0r" id="AoS-qN-nGR"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="Item" image="person.circle" catalog="system" id="yoO-nJ-NDH">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <segue destination="V0A-mm-uft" kind="show" id="o6O-3s-qlh"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="BottomLabel" destination="ugd-B6-nsO" id="LAV-NK-dc2"/>
+                        <outlet property="centerImageView" destination="XIc-jO-GSl" id="fXs-14-I2q"/>
+                        <outlet property="goalLabel" destination="FKo-3u-bUf" id="etV-TP-hgx"/>
+                        <outlet property="waterTextFiled" destination="xWL-qZ-Mxu" id="KTw-Ic-Pcq"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1039.1304347826087" y="-77.008928571428569"/>
+        </scene>
+        <!--Profile View Controller-->
+        <scene sceneID="J2F-H7-SK5">
+            <objects>
+                <viewController id="V0A-mm-uft" customClass="ProfileViewController" customModule="DrinkWater" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="6Ls-pF-VRN">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yV8-AS-XKU">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.25490197539999998" green="0.58039218189999997" blue="0.44705885649999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="sHZ-tH-0aW">
+                                <rect key="frame" x="20" y="319" width="374" height="230"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Hbv-bJ-Mmc" customClass="TweeActiveTextField" customModule="TweeTextField">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="50"/>
+                                        <color key="backgroundColor" red="0.2588235438" green="0.58039218189999997" blue="0.44705885649999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="Jc0-Rf-TGM"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" returnKeyType="go"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="activeLineColor">
+                                                <color key="value" systemColor="systemBackgroundColor"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="activeLineWidth">
+                                                <real key="value" value="4"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="animationDuration">
+                                                <real key="value" value="0.29999999999999999"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="placeholderColor">
+                                                <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="tweePlaceholder" value="이름을 입력해주세요"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="a26-SS-0KB" customClass="TweeActiveTextField" customModule="TweeTextField">
+                                        <rect key="frame" x="0.0" y="90" width="374" height="50"/>
+                                        <color key="backgroundColor" red="0.2588235438" green="0.58039218189999997" blue="0.44705885649999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="activeLineColor">
+                                                <color key="value" systemColor="systemBackgroundColor"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="activeLineWidth">
+                                                <real key="value" value="4"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="animationDuration">
+                                                <real key="value" value="0.29999999999999999"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="placeholderColor">
+                                                <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="tweePlaceholder" value="키(cm)를 설정해주세요"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ORn-ip-Won" customClass="TweeActiveTextField" customModule="TweeTextField">
+                                        <rect key="frame" x="0.0" y="180" width="374" height="50"/>
+                                        <color key="backgroundColor" red="0.2588235438" green="0.58039218189999997" blue="0.44705885649999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="activeLineColor">
+                                                <color key="value" systemColor="systemBackgroundColor"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="activeLineWidth">
+                                                <real key="value" value="5"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="animationDuration">
+                                                <real key="value" value="0.29999999999999999"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="placeholderColor">
+                                                <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="tweePlaceholder" value="몸무게(kg)를 설정해주세요"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </textField>
+                                </subviews>
+                            </stackView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="1-2" translatesAutoresizingMaskIntoConstraints="NO" id="IFq-Xj-3Qg">
+                                <rect key="frame" x="20" y="88" width="374" height="151"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="0C1-Ww-kC4"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="sHZ-tH-0aW" firstAttribute="leading" secondItem="0C1-Ww-kC4" secondAttribute="leading" constant="20" id="Gc2-ad-Yt2"/>
+                            <constraint firstItem="sHZ-tH-0aW" firstAttribute="centerX" secondItem="6Ls-pF-VRN" secondAttribute="centerX" id="SDb-9Z-SBD"/>
+                            <constraint firstItem="0C1-Ww-kC4" firstAttribute="trailing" secondItem="IFq-Xj-3Qg" secondAttribute="trailing" constant="20" id="Yed-Fv-V4p"/>
+                            <constraint firstItem="IFq-Xj-3Qg" firstAttribute="leading" secondItem="0C1-Ww-kC4" secondAttribute="leading" constant="20" id="c8h-Cv-5jb"/>
+                            <constraint firstItem="sHZ-tH-0aW" firstAttribute="top" secondItem="IFq-Xj-3Qg" secondAttribute="bottom" constant="80" id="uSf-bU-tG1"/>
+                            <constraint firstItem="IFq-Xj-3Qg" firstAttribute="top" secondItem="0C1-Ww-kC4" secondAttribute="top" id="xVy-XH-2X0"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="0oS-6D-Oxo">
+                        <barButtonItem key="rightBarButtonItem" title="저장" id="g8K-9A-x7Z">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <action selector="saveButtonPressed:" destination="V0A-mm-uft" id="WtB-73-d1f"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="heightTextField" destination="a26-SS-0KB" id="qcd-K6-7ai"/>
+                        <outlet property="nameTextfield" destination="Hbv-bJ-Mmc" id="Qyt-GU-JvQ"/>
+                        <outlet property="weightTextField" destination="ORn-ip-Won" id="VPC-A8-47W"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GlP-5G-hJI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1778" y="-77"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Z3W-RD-vMQ">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="86b-lq-7Vb" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="9mn-ab-yd3">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="bio-E7-PGF"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ngP-Z3-YSV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="128.98550724637681" y="-77.008928571428569"/>
+        </scene>
+    </scenes>
+    <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+    <resources>
+        <image name="1-1" width="152" height="151"/>
+        <image name="1-2" width="152" height="151"/>
+        <image name="arrow.left.arrow.right.circle.fill" catalog="system" width="128" height="121"/>
+        <image name="person.circle" catalog="system" width="128" height="121"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
